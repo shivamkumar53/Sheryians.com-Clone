@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheryians.com-Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assests/font/stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header style="width: 100%;">
+    <nav style="transform: translateY(0px);" class="navbar flex justify-between items-center">
+
+      <div class="nav-left flex items-center justify-center" style="gap: 0.624em;">
+
+        <div class="logo">
+          <img src="assests/logo/Sheryians_logo_EzwgcppnD.png" alt="">
+        </div>
+
+        <span>Sheryians coding school</span>
+
+      </div>
+
+      <div class="nav-right flex items-center">
+
+        <a href="index.html" class="nav-item">Home</a>
+
+        <a href="course.html" class="nav-item">Courses</a>
+
+        <button class="signIn nav-item auth-user">
+          <a href="/signin" class="btn sign-in">Sign In</a>
+        </button>
+
+        <button style="display: none;" class="menu nav-item"></button>
+
+      </div>
+
+      <button class="menu nav-item flex justify-center items-center">
+
+        <div onclick="showMenu()" class="menu-toggle">
+
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+
+        </div>
+
+        <div class="menu-panel">
+          <div class="menu-header flex justify-between">
+
+            <div onclick="hideMenu()" class="menu-close-toggle">
+              <div class="close-line close-line-1"></div>
+              <div class="close-line close-line-2"></div>
+            </div>
+
+            <h1>Menu</h1>
+          </div>
+
+          <div class="menu-items flex flex-column">
+
+            <a href="/" class="nav-item menu-item mobile-item">Home</a>
+
+            <a href="course.html" class="nav-item menu-item mobile-item">Courses</a>
+
+            <a href="/signin" class="nav-item menu-item mobile-item">Sign In</a>
+
+
+          </div>
+        </div>
+
+      </button>
+
+    </nav>
+  </header>
+
+  <main class="flex flex-column justify-center items-center">
+
+
+    <section class="intro-section flex flex-column justify-around items-center">
+
+      <div class="top"></div>
+
+      <div class="middle flex justify-center items-center flex-column">
+
+        <h1>
+          We only <span class="text-highlight">
+            teach
+          </span> <br>
+          what we are really <br>
+          really <span class="italic">good</span> at. <br>
+        </h1>
+        
+        <a class="Courses-link" href="course.html">Check Courses-Make an Impact</a>
+
+
+        <div class="side-text">
+          Get ready to <span class="text-highlight">accelerate your career </span> with customized courses and
+          leave
+          your mark in the tech industry
+        </div>
+
+      </div>
+
+      <div class="bottom">
+
+        <div class="mileStones flex justify-center items-center">
+          <div class="mileStone">
+
+            <div class="text">
+              <h2>24k+</h2>
+              <p>Students taught</p>
+            </div>
+          </div>
+
+          <div class="mileStone">
+
+            <div class="text">
+              <h2>9+</h2>
+              <p>Instructors</p>
+            </div>
+          </div>
+          <div class="mileStone">
+            <div class="text">
+              <h2>320k+</h2>
+              <p>Youtube Subs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="explore-free-learning flex flex-column justify-around">
+
+      <div class="top">
+        <span>
+          we do whatever it takes to help you
+          <br>
+          <span class="text-highlight">understand the concepts.</span>
+        </span>
+      </div>
+      <div class="explore-middle flex justify-center items-center">
+        <div class="video-container">
+          <iframe frameborder="0" src="https://www.youtube.com/embed/60SRAWmMXyc"></iframe>
+        </div>
+      </div>
+
+      <div class="explore-bottom flex justify-center items-center">
+        <a href="https://www.youtube.com/@thesheryianscodingschool" target="_blank"
+          class="btn btn-primary shadow-bottom shadow-primary">
+          Explore free learning
+        </a>
+      </div>
+
+
+
+    </section>
+
+
+    <section class="courses-offered flex flex-column ">
+
+      <div class="top">
+        <h1>
+          <span>Courses Offered.</span>
+        </h1>
+      </div>
+
+      <div class="courses-bottom">
+
+        <div class="course-grid">
+
+          <div class="course-box">
+
+            <a href="" class="courses-link">
+              <div class="sub-tags">
+
+
+                <div class="sub-tag">
+                  INDEPTH
+                </div>
+
+              </div>
+              <div class="courses-image">
+                <img
+                  src="assests/Course img/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.webp"
+                  alt="">
+              </div>
+
+              <div class="course-details">
+                <h2>Front-End Domination: Create Anything with Code</h2>
+                <p>Domin8 the web game with 'Front-End Domination.'! Nail HTML, CSS, JS, and Solve real problems, dive
+                  into fun projects, and be interview-ready! 🚀 💻</p>
+              </div>
+
+              <div class="course-tag">
+                <div class="devider"></div>
+                <div class="tags">
+                  <span class="tag">Web Development</span>
+                  <span class="tag">Animations</span>
+                  <span class="tag">Designing</span>
+                </div>
+              </div>
+
+              <div class="course-instructor">
+                <p>
+                  By <span>
+                    Harsh &amp; Sarthak
+                  </span>
+                </p>
+
+
+                <span>₹ 4999</span>
+
+
+              </div>
+            </a>
+
+            <a href="/paymentPortal/6536a79daa4702e3ac0b465e" class="buy-now btn btn-primary">Buy Now</a>
+
+          </div>
+
+
+          <div class="course-box">
+
+            <a href="" class="courses-link">
+              <div class="sub-tags">
+
+
+                <div class="sub-tag">
+                  INDEPTH
+                </div>
+
+              </div>
+
+              <div class="courses-image">
+                <img src="assests/Course img/undefined-backend_0.5x_Medium_wgHDU-5rPt.webp" alt="">
+              </div>
+
+              <div class="course-details">
+                <h2 class="">Back-End Domination: Create Efficient Back-End.</h2>
+                <p class="">Ready to rule the digital world? Learn to build powerful back-ends that drive websites and
+                  apps smoothly. From databases to security, we cover it all.</p>
+              </div>
+
+              <div class="course-tag">
+                <div class="devider"></div>
+                <div class="tags">
+
+                  <span class="tag">Web Development</span>
+
+                  <span class="tag">Logic Building</span>
+
+                </div>
+              </div>
+
+              <div class="course-instructor">
+                <p>
+                  By <span>
+                    Harsh Sharma
+                  </span>
+                </p>
+
+
+                <span>₹ 5999</span>
+
+
+              </div>
+            </a>
+
+            <a href="/paymentPortal/6536a79daa4702e3ac0b465e" class="buy-now btn btn-primary">Buy Now</a>
+
+          </div>
+
+          <div class="course-box">
+
+            <a href="" class="courses-link">
+              <div class="sub-tags">
+
+
+                <div class="sub-tag">
+                  PLACEMANTS
+                </div>
+
+              </div>
+              <div class="courses-image">
+                <img src="assests/Course img/undefined-apti_reasoning_45vyAnZ4y.webp" alt="">
+              </div>
+
+              <div class="course-details">
+                <h2>Aptitude &amp; Reasoning for Campus Placements</h2>
+                <p>Ace your campus placements! Master aptitude and reasoning with our expert-led course, packed with
+                  interactive lessons and practice tests.</p>
+              </div>
+
+              <div class="course-tag">
+                <div class="devider"></div>
+                <div class="tags">
+
+                  <span class="tag">Logic Building</span>
+
+                  <span class="tag">Aptitude</span>
+
+                  <span class="tag">Reasoning</span>
+
+                </div>
+              </div>
+
+              <div class="course-instructor">
+                <p>
+                  By <span>
+                    Akarsh Vyas
+                  </span>
+                </p>
+
+
+                <span>₹ 999</span>
+
+
+              </div>
+            </a>
+
+            <a href="/paymentPortal/6536a79daa4702e3ac0b465e" class="buy-now btn btn-primary">Buy Now</a>
+
+          </div>
+
+          <div class="course-box">
+
+            <a href="" class="courses-link">
+              <div class="sub-tags">
+
+
+                <div class="sub-tag">
+                  INDEPTH
+                </div>
+
+              </div>
+              <div class="courses-image">
+                <img src="assests/Course img/undefined-javaas_Large_jY0Wighav__6PygWBZQ.webp" alt="">
+              </div>
+
+              <div class="course-details">
+                <h2>Java &amp; DSA Domination</h2>
+                <p>Ace your coding interviews! Master Java and DSA with our expert-led course, packed with interactive
+                  lessons and practice tests.</p>
+              </div>
+
+              <div class="course-tag">
+                <div class="devider"></div>
+                <div class="tags">
+
+                  <span class="tag">Programming</span>
+
+                  <span class="tag">Logic Building</span>
+
+                </div>
+              </div>
+
+              <div class="course-instructor">
+                <p>
+                  By <span>
+                    Adarsh Gupta
+                  </span>
+                </p>
+
+
+                <span>₹ 4999</span>
+
+
+              </div>
+            </a>
+
+            <a href="/paymentPortal/6536a79daa4702e3ac0b465e" class="buy-now btn btn-primary">Buy Now</a>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="student-in-company flex flex-column justify-around">
+      <div class="student-in-company-top flex justify-center">
+        <h1>
+          <span>
+            Top <span class="text-highlight">companies</span> our students working with
+          </span>
+        </h1>
+      </div>
+      <div class="student-in-company-middle flex justify-center items-center">
+        <div class="companies flex justify-center items-center flex-column">
+          <div class="upper flex justify-center">
+            <div class="companie">
+              <picture>
+                <img loading="lazy" src="assests/company logo/netlinklogo_A5k0VjsZL.webp" alt="">
+              </picture>
+            </div>
+            <div class="companie">
+              <picture>
+                <img loading="lazy" src="assests/company logo/mindtree logo_sj0PIBh91l.webp" alt="">
+              </picture>
+            </div>
+            <div class="companie">
+              <picture>
+                <img loading="lazy" src="assests/company logo/wallmartlogo_vR8JHQ_h20.webp" alt="">
+              </picture>
+            </div>
+          </div>
+
+          <div class="lower flex justify-center">
+            <div class="companie">
+
+              <picture>
+                <img loading="lazy" src="assests/company logo/rapidops logo_ki9BX1CCNf.webp" alt="">
+              </picture>
+            </div>
+            <div class="companie">
+
+              <picture>
+                <img loading="lazy" src="assests/company logo/tcs logo_PglyFlXHbC.webp" alt="">
+              </picture>
+            </div>
+            <div class="companie">
+
+              <picture>
+                <img loading="lazy" src="assests/company logo/amazon logo_WQtU99KWC.webp" alt="">
+              </picture>
+            </div>
+            <div class="companie">
+
+              <picture>
+                <img loading="lazy" src="assests/company logo/wipro logo_ezOSPx52r8.webp" alt="">
+              </picture>
+            </div>
+            <div class="companie">
+              <picture>
+                <img loading="lazy" src="assests/company logo/gfg logo_gixPTWASN.webp" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom flex justify-center">
+        <a href="course.html" class="btn btn-primary btn-explore">
+          Explore Courses
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer flex flex-column">
+      <div class="top flex">
+        <div class="footer-section flex flex-column">
+          <img class="logo" src="https://ik.imagekit.io/sheryians/Sheryians_logo_EzwgcppnD?updatedAt=1701272916848"
+            alt="">
+          <p>Let’s connect with our socials</p>
+          <div class="socials">
+            <a target="_blank" href="https://www.instagram.com/sheryians_coding_school"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://in.linkedin.com/company/the-sheryians-coding-school"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://discord.gg/D23JkFqrgz"><i class="fa-brands fa-discord"></i></a>
+            <a target="_blank" href="https://www.youtube.com/@thesheryianscodingschool"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a target="_blank" href="https://twitter.com/sheryians_"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h1>
+            COMPANY
+          </h1>
+          <div class="options">
+            <a target="_blank" href="/aboutUs">About Us</a>
+            <a href="mailto:hello@sheryians.com">Support</a>
+            <a target="_blank" href="/terms-and-conditions/Terms_and_Conditions.pdf">Privacy Policy</a>
+            <a target="_blank" href="/terms-and-conditions/Terms_and_Conditions.pdf">Terms and Condition</a>
+            <a target="_blank" href="/Pricing&amp;Refund-Policy/Pricing-and-Refund_policy.pdf">Pricing and Refund</a>
+            <a target="_blank" href="/hire">Hire From Us</a>
+            <a target="_blank" href="https://ik.imagekit.io/sheryians/Bug_8EBE0pzVa.pdf">Bug Bounty</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h1>COMMUNITY</h1>
+          <div class="options">
+            <a target="_blank" href="https://www.instagram.com/inertiabysheryians">Inertia</a>
+            <a target="_blank" href="https://discord.gg/D23JkFqrgz">Discord</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h1>Get In Touch</h1>
+
+          <div class="options">
+            <a href="tel:+918109161752">+91 8109161752,</a>
+            <a href="tel:+919691778470">+91 9691778470</a>
+            <a href="mailto:hello@sheryians.com">hello@sheryians.com</a>
+            <a target="_blank"
+              href="https://www.google.com/maps/place/Sheryians+Coding+School/@23.2512609,77.4627502,17z/data=!3m1!4b1!4m6!3m5!1s0x397c43977890a98d:0x928a948dc6de732e!8m2!3d23.251256!4d77.4653251!16s%2Fg%2F11gvy2g2z8">23-B,
+              Indrapuri Sector C,
+              Bhopal(MP), 462021</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="bottom">
+        <h1 style="text-align: center;">Copyright © 2024 Sheryians Pvt. Ltd. <br> All Rights Reserved.</h1>
+      </div>
+    </footer>
+
+  </main>
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

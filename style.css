@@ -1,0 +1,970 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility for display flex */
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* Utilities for justify-content */
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+/* Utilities for align-items */
+.items-start {
+    align-items: flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.items-baseline {
+    align-items: baseline;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* utility css end here */
+
+body {
+    background-image: url(assests/body-background/laptop.svg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: initial;
+    background-color: #131313;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+}
+
+/* header and nav css start here */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    isolation: isolate;
+    width: 100%;
+    padding: 0px 70px;
+    height: 60px;
+    z-index: 111;
+    backdrop-filter: blur(5px);
+    font-family: 'Neue Machina';
+    transition: top 0.3s ease;
+}
+
+.menu {
+    display: none;
+}
+
+.logo img {
+    width: 1.5em;
+}
+
+.nav-left span {
+    font-size: 1.1em;
+    line-height: 1.3;
+    font-weight: 300;
+    color: rgb(233, 233, 233);
+}
+
+.nav-right {
+    gap: 1.5rem;
+}
+
+.nav-item {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(233, 233, 233);
+}
+
+.signIn {
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    padding: 7.5px 22px;
+    border-radius: 0.2em;
+    background-color: #27DFB3;
+}
+
+.signIn a {
+    color: black;
+}
+
+/* header and nav css end here */
+
+
+
+/* intro-section css start from here */
+
+.intro-section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.middle {
+    position: relative;
+    gap: 4rem;
+    font-size: clamp(10px, 1.2vw, 1rem);
+}
+
+.middle h1 {
+    text-align: center;
+    line-height: 0.845em;
+    font-size: 5em;
+    color: #E9E9E9;
+    font-weight: 300;
+    font-family: 'Neue Machina';
+}
+
+.text-highlight {
+    color: #24CFA6;
+}
+
+.italic {
+    font-weight: 20;
+    font-family: 'juana';
+}
+
+.Courses-link {
+    color: black;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding: 0.45em 1.5em;
+    font-family: "Helvetica";
+    border-radius: 0.4em;
+    background-color: #27DFB3;
+}
+
+.side-text {
+    font-size: 0.8em;
+    width: 15em;
+    text-align: left;
+    line-height: 1.2em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: rgb(233, 233, 233);
+    font-family: "Helvetica";
+    transform: translate(80%, -60%);
+}
+
+.bottom {
+    width: 100%;
+}
+
+.mileStones {
+    width: 100%;
+    gap: 4em;
+    color: rgb(233, 233, 233);
+    font-size: 1.4em;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h2 {
+    font-weight: 600;
+    font-family: "Helvetica";
+}
+
+.text p {
+    font-family: 'Neue Machina';
+}
+
+.explore-free-learning {
+    width: 100%;
+    min-height: 100vh;
+    gap: 4rem;
+    margin-top: 3.5rem;
+    padding: 4rem;
+}
+
+.explore-free-learning .top {
+    text-align: center;
+    color: rgb(233, 233, 233);
+    font-family: "Neue Machina";
+    font-weight: 400;
+    line-height: 1.02em;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.explore-middle .video-container {
+    aspect-ratio: 16 / 9;
+    position: relative;
+    max-width: 68rem;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.explore-bottom {
+    width: 100%;
+}
+
+.explore-bottom .btn {
+    color: black;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding: 0.45em 1.5em;
+    font-family: "Helvetica";
+    border-radius: 0.4em;
+    background-color: #27DFB3;
+}
+
+.courses-offered {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 5rem;
+    padding: 0rem 4rem 4rem 4rem;
+}
+
+.courses-offered .top h1 span {
+    color: rgb(233, 233, 233);
+    font-size: 2.8rem;
+    font-weight: 300;
+    font-family: 'Neue Machina';
+}
+
+.courses-bottom {
+    margin-top: 4rem;
+}
+
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.3rem;
+    row-gap: 4rem;
+}
+
+/* Styling the individual course boxes */
+.course-box {
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.7rem;
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+}
+
+
+.courses-link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #2C2C2C;
+    border-radius: 0.7rem;
+    font-family: 'Helvetica';
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+}
+
+.courses-image img {
+    width: 100%;
+    border-radius: 0.7rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.course-details {
+    padding: 1rem;
+}
+
+
+.course-details h2 {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: rgb(233, 233, 233);
+    margin-bottom: 0.7em;
+}
+
+.course-details p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #6c6868;
+    line-height: 1.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.course-tag {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    position: relative;
+}
+
+.devider {
+    width: 95%;
+    height: 0.05em;
+    background-color: rgb(85, 81, 81);
+    position: absolute;
+    top: 0%;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.sub-tags {
+    position: absolute;
+    top: 0.8em;
+    right: 0.75em;
+}
+
+.sub-tag {
+    background-color: rgb(233, 233, 233);
+    color: var(--black);
+    padding: 0.4em 1.3em;
+    border-radius: 0.45em;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    color: black;
+    font-weight: 800;
+}
+
+.tags {
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.tag {
+    background-color: #121212;
+    padding: 0.7rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 0.35rem;
+    color: rgb(233, 233, 233);
+    white-space: nowrap;
+    width: fit-content;
+    font-size: 1em;
+}
+
+.course-instructor {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    background-color: #121212;
+}
+
+
+.course-instructor p {
+    display: flex;
+    color: #837f7f;
+    align-items: flex-end;
+    gap: 0.4rem;
+    font-size: 14px;
+}
+
+.course-instructor span {
+    color: rgb(233, 233, 233);
+    font-size: 1.2em;
+}
+
+.buy-now {
+    color: black;
+    width: 100%;
+    font-weight: 650;
+    font-size: 1.3em;
+    padding: 0.45em 1.5em;
+    font-family: "Helvetica";
+    text-align: center;
+    border-radius: 0.4em;
+    background-color: #27DFB3;
+}
+
+.student-in-company {
+    padding: 2rem 4rem 2rem 4rem;
+    margin-top: 6rem;
+    min-height: 100vh;
+}
+
+.student-in-company-top h1 {
+    text-align: center;
+    color: rgb(233, 233, 233);
+    max-width: 53rem;
+}
+
+.student-in-company-top h1 span {
+    font-size: 3.25rem;
+    font-family: "Neue Machina";
+    font-weight: 300;
+    line-height: 1.05em;
+}
+
+.companies {
+    width: 100%;
+    gap: 1rem;
+}
+
+.student-in-company-middle {
+    width: 100%;
+    min-height: 45vh;
+}
+
+.upper {
+    width: 100%;
+    gap: 2rem;
+}
+
+.companie img {
+    width: 90%;
+    max-width: 10rem;
+    aspect-ratio: 1 / 1;
+}
+
+.btn-primary {
+    color: black;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding: 0.45em 1.5em;
+    font-family: "Helvetica";
+    border-radius: 0.4em;
+    background-color: #27DFB3;
+}
+
+.footer {
+    padding: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.footer .top {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    position: relative;
+}
+
+.footer .top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 105%;
+    height: 0.05rem;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.footer .top::after {
+    content: "";
+    position: absolute;
+    top: 95%;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 105%;
+    height: 0.05rem;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.footer-section:nth-child(1) {
+    flex-basis: 18rem;
+    margin-top: 1rem;
+}
+
+.footer-section {
+    gap: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h1 {
+    font-size: 1rem;
+    font-family: "Helvetica";
+    color: rgb(233, 233, 233);
+}
+
+.footer-section p {
+    color: rgb(233, 233, 233);
+    font-family: "Helvetica";
+}
+
+.footer-section .options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.05rem;
+    margin-top: 0.4rem;
+}
+
+.footer-section .options a {
+    font-weight: 100;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+    font-family: "Helvetica";
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.footer-section .logo {
+    width: 2.7rem;
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.socials i {
+    font-size: 1.5rem;
+    color: #E9E9E9;
+}
+
+
+.socials a {
+    text-decoration: none;
+}
+
+.footer .bottom h1 {
+    font-size: 1rem;
+    color: rgb(233, 233, 233);
+    font-weight: 500;
+    font-family: "Helvetica";
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    body {
+        background-image: url(assests/body-background/tablet.svg);
+    }
+
+    .intro-section {
+        margin-top: -8%;
+    }
+
+    .middle h1 {
+        font-size: 5.5em;
+        line-height: 1em;
+    }
+
+    .Courses-link {
+        font-size: 1.8em;
+        padding: 0.54em 1.7em;
+    }
+
+    .side-text {
+        display: none;
+    }
+
+    .mileStone {
+        font-size: 0.9em;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .student-in-company-top h1 span {
+        font-size: 3rem;
+    }
+
+    .upper {
+        margin-left: -6%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        background-image: url(assests/body-background/mobile.svg);
+    }
+
+    .intro-section {
+        margin-top: 0%;
+        gap: 9rem;
+        min-height: max-content;
+    }
+
+    .navbar {
+        padding: 0px 15px;
+    }
+
+    .nav-left {
+        max-width: 15ch;
+    }
+
+    .nav-left span {
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+
+    .middle {
+        gap: 3rem;
+    }
+
+    .bottom {
+        margin-top: -2rem;
+    }
+
+    .middle h1 {
+        margin-top: 3%;
+        z-index: -1;
+        line-height: 1em;
+    }
+
+    .Courses-link {
+        font-weight: 500;
+        font-size: 1.8em;
+        z-index: 2;
+        padding: 0.55em 1.5em;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .side-text {
+        display: none;
+    }
+
+    .mileStones {
+        gap: 1.8em;
+    }
+
+    .mileStone {
+        font-size: 0.6em;
+    }
+
+    .mileStone h2 {
+        font-weight: 800;
+    }
+
+    .menu {
+        display: flex;
+        border: none;
+        outline: none;
+        z-index: 101;
+        background-color: transparent;
+    }
+
+    .menu-toggle {
+        font-size: 1.5rem;
+        width: 1em;
+        height: 0.5em;
+        padding: 0;
+        z-index: 3;
+        position: relative;
+    }
+
+    .menu-toggle .line {
+        position: absolute;
+        gap: 0.25em;
+        height: 0.1em;
+        width: 0.9em;
+        background-color: rgb(233, 233, 233);
+    }
+
+    .menu-toggle .line1 {
+        top: 0;
+    }
+
+    .menu-toggle .line2 {
+        bottom: 0%;
+    }
+
+    .decreaseWidthRightToLeft {
+        animation: decreaseWidthRightToLeft 0.2s forwards;
+    }
+
+    .decreaseWidthLeftToRight {
+        animation: decreaseWidthLeftToRight 0.2s forwards;
+    }
+
+
+
+    /* Animation for line 2 (left to right) */
+    @keyframes decreaseWidthRightToLeft {
+        0% {
+            width: 100%;
+            left: 0;
+        }
+
+        100% {
+            width: 0;
+            left: 0;
+        }
+    }
+
+    /* Animation for line 2 (left to right) */
+    @keyframes decreaseWidthLeftToRight {
+        0% {
+            width: 100%;
+            right: 0;
+        }
+
+        100% {
+            width: 0;
+            right: 0;
+        }
+    }
+
+    .menu-panel {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        background-color: #0C0C0C;
+        transition: all 0.8s ease;
+        font-family: 'Neue Machina';
+        z-index: 9999;
+    }
+
+    .menu-show {
+        right: 0%;
+    }
+
+    .close-menu {
+        right: 100%;
+    }
+
+    .menu-items {
+        padding: 1.3rem 3vw;
+        padding-top: 3rem;
+        text-align: left;
+    }
+
+    .menu-item {
+        font-size: 1.5em;
+        padding: 0.5em;
+        color: rgb(115, 115, 115);
+    }
+
+    .menu-header {
+        font-size: 1.3em;
+        text-align: left;
+        padding: 1.3rem 7vw;
+        padding-top: 1.5rem;
+        flex-direction: row-reverse;
+        position: relative;
+        border-bottom: 1px solid gray;
+    }
+
+    .menu-header h1 {
+        font-weight: 300;
+    }
+
+    .menu-close-toggle {
+        position: relative;
+        width: 1em;
+        height: 1em;
+    }
+
+    .close-line {
+        position: absolute;
+        background-color: rgb(233, 233, 233);
+        height: 2px;
+        width: 0;
+    }
+
+    .close-line-1 {
+        transform: rotate(45deg);
+        top: 0;
+        left: 0;
+        transform-origin: left top;
+        /* Grows from top left */
+    }
+
+    .close-line-2 {
+        transform: rotate(-45deg);
+        top: 0;
+        right: 35%;
+        transform-origin: right top;
+        /* Grows from top right */
+    }
+
+    .growanimation {
+        animation: grow 0.7s forwards;
+    }
+
+    @keyframes grow {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    .explore-free-learning {
+        padding: 1rem;
+        min-height: max-content;
+        gap: 4rem;
+        justify-content: center;
+        height: initial;
+        margin-top: 5rem;
+    }
+
+    .explore-free-learning .top {
+        font-size: 1.3rem;
+    }
+
+    .explore-free-learning .top span br {
+        display: none;
+    }
+
+    .explore-middle .video-container {
+        border-radius: 0.5rem;
+    }
+
+    .explore-bottom .btn {
+        font-size: 1.2em;
+    }
+
+    .courses-offered {
+        padding: 1rem;
+    }
+
+    .tag {
+        padding: 0.7rem 0.9rem;
+    }
+
+    .courses-offered .top h1 span {
+        font-size: 1.4rem;
+    }
+
+    .courses-bottom {
+        margin-top: 2rem;
+    }
+
+    .course-grid {
+        display: flex;
+        /* Switch to flexbox layout */
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+
+    .course-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .course-box {
+        gap: 0.9rem;
+    }
+
+    .student-in-company {
+        padding: 2rem 1rem 2rem 1rem;
+        margin-top: 0rem;
+    }
+
+    .upper {
+        gap: 0.1rem;
+    }
+
+    .upper .companie img {
+        width: 76%;
+    }
+
+    .lower .companie img {
+        width: 110%;
+    }
+
+    .lower {
+        gap: 0.5rem;
+    }
+
+    .student-in-company-top h1 span {
+        font-size: 1.9rem;
+    }
+
+    .student-in-company-middle {
+        min-height: 0vh;
+    }
+
+    .companies {
+        gap: 0rem;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+
+    .footer .top {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+
+    .footer .bottom h1 {
+        padding-top: 1rem;
+        font-size: 0.8rem;
+    }
+}
